@@ -1,0 +1,35 @@
+{
+  "name": "djs-v13-music-bot",
+  "version": "1.0.0",
+  "description": "A simple example music bot with djs & erela.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Venom9718/djs-v13-Music-Bot.git"
+  },
+  "keywords": [
+    "e"
+  ],
+  "author": "Venom9718 & Blacky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Venom9718/djs-v13-Music-Bot/issues"
+  },
+  "homepage": "https://github.com/Venom9718/djs-v13-Music-Bot#readme",
+  "dependencies": {
+    "@ksoft/api": "^3.1.9",
+    "discord.js": "^13.2.0",
+    "erela.js": "^2.3.3",
+    "erela.js-deezer": "^1.0.7",
+    "erela.js-facebook": "^1.0.4",
+    "erela.js-spotify": "^1.2.0",
+    "fs": "^0.0.1-security",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.0.4",
+    "ms": "^2.1.3",
+    "pretty-ms": "^7.0.1"
+  }
+}

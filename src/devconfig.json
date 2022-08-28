@@ -1,0 +1,68 @@
+{
+    "token": "ODY4NDM1ODgxMjA2MzQ5ODI0.GQzWCp.hJFyTS58NM4231xk06tiHwUZGAv4sHVMqjS1Zk",
+    "prefix": "=",
+    "mongodb": "mongodb+srv://yashi_mongoDB:7s634YEDkav4Ugs9@cluster0.zn8cb.mongodb.net/?retryWrites=true&w=majority",
+    "color": "#FF6600",
+    "dev": ["852765465095962635", "852082777712885781"],
+    "ksoftapi": "AIzaSyAAg3GHxipuyDz7KsCAv434yoFT56TR9LQ",
+    "nodes": [
+        {
+            "host": "lava2.cruzstudio.tech",
+            "password": "cruzstudio.tech",
+            "identifier": "main",
+            "port": 80
+        }
+    ],
+    "spotify": {
+        "client_id": "e6f84fbec2b44a77bf35a20c5ffa54b8",
+        "client_secret": "498f461b962443cfaf9539c610e2ea81"
+    },
+
+    "emojis": {
+        "previous": "⬅️",
+        "next": "➡️",
+        "stop": "⏹️"
+    },
+
+    "button": {
+        "styles": {
+            "grey": "SECONDARY",
+            "blue": "PRIMARY",
+            "link": "LINK",
+            "red": "DANGER",
+            "green": "SUCCESS"
+        }
+    },
+
+    "links": {
+        "invite": "https://discord.com/api/oauth2/authorize?client_id=868435881206349824&permissions=277091839350&redirect_uri=https%3A%2F%2Fdiscord.gg%2F6EMRvzYzkP&response_type=code&scope=bot%20applications.commands%20guilds.join",
+        "image": "https://media.discordapp.net/attachments/892270315630133268/898567392941211648/oxy_boat_pic.png",
+        "server": "https://discord.gg/6EMRvzYzkP",
+        "invite2": "https://discord.com/api/oauth2/authorize?client_id=868435881206349824&permissions=277091839350&redirect_uri=https%3A%2F%2Fdiscord.gg%2F6EMRvzYzkP&response_type=code&scope=bot%20applications.commands%20guilds.join"
+    },
+"botlist":{
+  "topgg": ""
+},
+    "guild": "960418179094577153",
+
+    "setup": {
+        "channel": {
+            "topic": "🔉 To decrease 10% volume.\n⏮️ To play the previously played song.\n⏯️ To pause/resume the song.\n⏭️ To skip the song.\n🔊 To increase 10% volume.\n⏪ To rewind 10s seconds.\n♾️ To toggle enable/disable autoplay.\n⏹️ To stops/destroy the player.\n🔁 Tp switch between the loop modes (track/queue/shuffle).\n⏩ To forward 10 seconds."
+        }
+    },
+
+    "hooks": { 
+        "errors":{
+          "url": "https://discord.com/api/webhooks/1006255879257075713/cEcA5MAIeBNzKG1frZBZTZMc2zHZaF1BZ8_5OhUicABdI9WAWfVUWWDCH8_AWe0XA7ZL"
+        }, 
+        "lavalink":{
+          "url": "https://discord.com/api/webhooks/1006255767738908682/n9BrucWyX59FcBjf2e8C-M8_Fl_5ISvrr5dTjp7lCdt-I8WCed1GCtqbkR-5r2v-CXvI"
+        }, 
+        "guildAdd":{
+          "url": "https://discord.com/api/webhooks/1006255557671395510/rF5NITfePAYNmIB_O6lDb9BpDETOtBq0XGPVl55FrFBR2cHAy3hrXcRm9CeKn-LwRQpM"
+        }, 
+        "guildRemove": {
+          "url": "https://discord.com/api/webhooks/1006255668350685196/FNO6F1-sBLoW2LV5EX8Pwx8QjIXziFwiyTufEQC1q8FBapY6v97CaKPbU2CH0HIp_G8g"
+        }
+    }
+}
