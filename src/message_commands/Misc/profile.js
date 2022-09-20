@@ -1,15 +1,15 @@
-const { Message, MessageActionRow } = require("discord.js");
-const Client = require("../../../index");
+const { Message } = require("discord.js");
+const Client = require("../../../Index");
 
 module.exports = {
-    name: "invite",
-    description: "To invite me to your server.",
+    name: "badge",
+    description: "To show badges",
     cooldown: 0,
     dev: false,
     usage: "",
-    aliases: ["add"],
+    aliases: ["profile"],
     category: "Misc",
-    examples: ["invite"],
+    examples: ["badge"],
     sub_commands: [],
     args: false,
     player: { active: false, voice: false, dj: false, djPerm: null },
@@ -36,8 +36,8 @@ module.exports = {
         return message.channel.send({
           embeds: [
             new MessageEmbed()
-              .setColor(client.settings.embed_color)
-              .setDescription(`${emojis.cross} Invalid user.`),
+              .setColor(color)
+              .setDescription(`Invalid user.`),
           ],
         });
       }
@@ -45,8 +45,8 @@ module.exports = {
         return message.channel.send({
           embeds: [
             new MessageEmbed()
-              .setColor(client.settings.embed_color)
-              .setDescription(`${emojis.cross} The user must not be a bot.`),
+              .setColor(color)
+              .setDescription(`The user must not be a bot.`),
           ],
         });
       }
@@ -54,7 +54,7 @@ module.exports = {
       user = message.member.user;
     }
     const getUserBadges = async () => {
-      const { badges } = await client.cluster.evalOnCluster(
+      const { badges } = await client.shard.broadcastEval(
         async (c, { customEmojiAllowed, userId }) => {
           let badges = [];
           let guild = await c.guilds.fetch("961893008893177898");
@@ -141,7 +141,7 @@ module.exports = {
     return message.channel.send({
       embeds: [
         new MessageEmbed()
-          .setColor(client.settings.embed_color)
+          .setColor(color)
           .setAuthor({
             name: `Profile of ${user.tag}`,
             url: "https://discord.gg/tV78nFktCA",
